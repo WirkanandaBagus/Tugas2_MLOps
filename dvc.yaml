@@ -1,0 +1,8 @@
+stages:
+  train:
+    cmd: python train.py
+    deps:
+      - train.py
+      - diabetes_MLOps.csv
+    outs:
+      - models/diabetes_model.pkl
