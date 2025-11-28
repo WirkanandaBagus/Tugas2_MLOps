@@ -29,3 +29,11 @@ jobs:
 
       - name: Workflow success message
         run: echo "Workflow berhasil dijalankan!"
+
+      - name: Build Docker image
+        run: |
+          docker build -t tugas2-mlops .
+
+      - name: Run Docker container
+        run: |
+          docker run --rm tugas2-mlops
