@@ -21,3 +21,11 @@ jobs:
 
       - name: Install dependencies
         run: |
+          pip install -r requirements.txt
+
+      - name: Run simple script
+        run: |
+          python hello.py
+
+      - name: Workflow success message
+        run: echo "Workflow berhasil dijalankan!"
